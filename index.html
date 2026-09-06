@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password-container">
+        <h2>R.P.G Random Password Generator</h2>
+        <div class="input-container">
+            <input type="text" id="input" 
+            class="input" placeholder="Create Password" readonly>
+            <i class="fa-regular fa-copy"></i>
+        </div>
+        <button class="btn">Generate</button>
+    </div>
+    <!--activeクラスを追加して初期状態でアラートを非表示にする-->
+    <div class="alert-container active">Password copied to clipboard!</div>
+    <script src="index.js"></script>
+</body>
+</html>
