@@ -87,3 +87,25 @@ body {
 .active.alert-container {
     right: -300px;
 }
+
+/* 通常（PCなど）は改行タグを無効化 */
+.mobile-break {
+    display: none;
+}
+
+/* スマホ画面（幅768px以下）の時のスタイル設定 */
+@media (max-width: 768px) {
+    .mobile-break {
+        display: block; /* 改行を有効にする */
+    }
+
+    h2 {
+        text-align: center; /* 中央揃えで見やすくする */
+        font-size: 20px;    /* スマホ用にフォントサイズを微調整 */
+    }
+
+    .password-container {
+        width: 90%;         /* スマホ画面からはみ出さないように自動調整 */
+        box-sizing: border-box;
+    }
+}
